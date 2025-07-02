@@ -22,7 +22,7 @@
 - **Database**: PostgreSQL (or SQLite for testing)
 - **Push Notifications**: Firebase Cloud Messaging (`pyfcm`)
 - **Deployment**: Google Cloud App Engine
-- **CI/CD**: GitHub Actions (optional)
+- **CI/CD**: GitHub Actions
 - **Testing**: Postman
 
 ---
