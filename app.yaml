@@ -1,0 +1,15 @@
+runtime: python311
+
+entrypoint: gunicorn -b :$PORT run:app
+
+env_variables:
+  FIREBASE_KEY: "AIzaSyDg2jmbuZHUnoqkI4P8cLN2bDW_jdQytu8"
+  SECRET_KEY: "super-secret"
+  DATABASE_URL: "sqlite:///bookmate.db"
+
+instance_class: F1
+
+automatic_scaling:
+  target_cpu_utilization: 0.65
+  min_instances: 1
+  max_instances: 2
